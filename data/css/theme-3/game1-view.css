@@ -1,0 +1,38 @@
+@import "common.css";
+Button{
+    -fx-cursor : hand;
+    -fx-font-weight : bold;
+    -fx-text-fill: -fx-white-2;
+    -fx-background-color: -fx-blue-2;
+    -fx-background-radius: 20px;
+}
+
+ToggleButton{
+    -fx-cursor : hand;
+    -fx-pref-width: 187;
+    -fx-pref-height: 165;
+    -fx-font-weight : bold;
+    -fx-text-fill: -fx-white-2;
+    -fx-background-color: -fx-blue-2;
+    -fx-background-radius: 20px;
+}
+
+ToggleButton:hover{
+    -fx-background-color : -fx-white-1;
+    -fx-text-fill : -fx-green-2;
+}
+
+ToggleButton:selected{
+    -fx-background-color: red;
+}
+
+Button:hover{
+    -fx-text-fill: black;
+}
+
+#quesLabel{
+    -fx-font-weight : bold;
+    -fx-background-color: -fx-blue-2;
+    -fx-text-fill: -fx-white-2;
+    -fx-background-radius: 20px;
+}

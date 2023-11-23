@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.controller.GameController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <VBox prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <HBox fx:id="navBar" alignment="CENTER" prefHeight="54.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                  <children>
+                     <Label fx:id="homeNav" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="54.0" prefWidth="154.0" styleClass="btn-1" text="Trang chủ">
+                        <padding>
+                           <Insets left="20.0" right="20.0" />
+                        </padding>
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                     </Label>
+                     <Label fx:id="gameNav" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="54.0" prefWidth="162.0" styleClass="btn-22" text="Ôn tập">
+                        <padding>
+                           <Insets left="20.0" right="20.0" />
+                        </padding>
+                     </Label>
+                     <Label fx:id="translateNav" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="183.0" styleClass="btn-1" text="Dịch nghĩa">
+                        <padding>
+                           <Insets left="20.0" right="20.0" />
+                        </padding>
+                     </Label>
+                     <ImageView fx:id="streakImg" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <HBox.margin>
+                           <Insets left="50.0" />
+                        </HBox.margin>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </ImageView>
+                     <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                        <children>
+                           <Circle fx:id="userNav" fill="#ffffff00" radius="27.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                 <Insets right="20.0" />
+                              </HBox.margin>
+                           </Circle>
+                        </children>
+                     </HBox>
+                  </children>
+                  <VBox.margin>
+                     <Insets bottom="20.0" />
+                  </VBox.margin>
+               </HBox>
+               <VBox alignment="CENTER" prefHeight="485.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+                  <children>
+                     <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="1000.0">
+                        <children>
+                           <HBox prefHeight="117.0" prefWidth="521.0" />
+                           <Button fx:id="game1Nav" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" text="Game 1" />
+                        </children>
+                     </HBox>
+                     <HBox alignment="TOP_CENTER" prefHeight="69.0" prefWidth="1000.0">
+                        <children>
+                           <Button fx:id="game2Nav" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" text="Game 2" />
+                        </children>
+                        <VBox.margin>
+                           <Insets top="40.0" />
+                        </VBox.margin>
+                     </HBox>
+                     <HBox alignment="TOP_CENTER" prefHeight="72.0" prefWidth="1000.0">
+                        <children>
+                           <Button fx:id="game3Nav" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" text="Game 3" />
+                           <HBox prefHeight="100.0" prefWidth="523.0" />
+                        </children>
+                        <VBox.margin>
+                           <Insets top="40.0" />
+                        </VBox.margin>
+                     </HBox>
+                  </children>
+               </VBox>
+            </VBox>
+         </children>
+      </AnchorPane>
+
+      <HBox alignment="TOP_RIGHT" fillHeight="false" layoutX="89.0" layoutY="-77.0" pickOnBounds="false" prefHeight="592.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" pickOnBounds="false" prefHeight="90.0" prefWidth="890.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="80.0" />
+               </HBox.margin>
+               <children>
+                  <HBox fx:id="dailyContainer" alignment="CENTER" prefHeight="90.0" prefWidth="507.0" spacing="10.0" style="-fx-background-color: #ff3333; -fx-border-radius: 10; -fx-border-color: #05386B; -fx-background-radius: 10; -fx-border-width: 2;" visible="false">
+                     <HBox.margin>
+                        <Insets left="350.0" />
+                     </HBox.margin></HBox>
+               </children>
+            </HBox>
+            <VBox fx:id="div2" alignment="CENTER" prefHeight="151.0" prefWidth="146.0">
+               <children>
+                  <Label fx:id="nav1" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="btn-2" text="Tài khoản">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fx:id="nav1Img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="nav2" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="btn-2" text="Cài đặt">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fx:id="nav2Img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="nav3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="btn-2" text="Đăng xuất">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fx:id="nav3Img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

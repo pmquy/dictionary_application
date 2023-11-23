@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.controller.Game2Controller">
+   <children>
+      <HBox prefHeight="679.0" prefWidth="1057.0">
+         <children>
+            <StackPane prefHeight="679.0" prefWidth="841.0">
+               <children>
+                  <VBox fx:id="gameContent" prefHeight="679.0" prefWidth="842.0">
+                     <HBox alignment="CENTER" prefHeight="0.0" prefWidth="841.0" VBox.vgrow="ALWAYS">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="64.0" prefWidth="762.0" style="-fx-font-weight: bolder; -fx-text-fill: #05386B;" text="GAME 2">
+                              <font>
+                                 <Font size="26.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox prefHeight="516.0" prefWidth="725.0" VBox.vgrow="ALWAYS">
+                        <VBox.margin>
+                           <Insets right="10.0" />
+                        </VBox.margin>
+                        <children>
+                           <GridPane fx:id="grid" prefHeight="563.0" prefWidth="811.0" style="-fx-hgap: 10; -fx-vgap: 10;">
+                             <columnConstraints>
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                             </columnConstraints>
+                             <rowConstraints>
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             </rowConstraints>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                              <children>
+                                 <ToggleButton mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton">
+                                    <toggleGroup>
+                                       <ToggleGroup fx:id="btngroup" />
+                                    </toggleGroup>
+                                 </ToggleButton>
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.rowIndex="4" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.rowIndex="3" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.rowIndex="2" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="3" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="2" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.rowIndex="1" />
+                                 <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="198.0" text="ToggleButton" toggleGroup="$btngroup" GridPane.columnIndex="1" />
+                              </children>
+                           </GridPane>
+                        </children>
+                     </VBox>
+                  </VBox>
+                  <VBox fx:id="rule" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Luật chơi " wrapText="true">
+                           <font>
+                              <Font size="53.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="16.0" prefWidth="746.0" style="-fx-font-weight: bold;" text="Trò chơi gồm 10 cặp từ-nghĩa được sắp xếp một cách ngẫu nhiên. " textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="342.0" prefHeight="56.0" prefWidth="746.0" style="-fx-font-weight: bold;" text="Chọn ra 1 cặp từ-nghĩa bằng cách bấm chuột vào chúng. Nếu đúng, chúng sẽ biến mất. " textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="350.0" prefHeight="16.0" prefWidth="746.0" style="-fx-font-weight: bold;" text="Trò chơi sẽ chiến thắng khi làm mất toàn bộ các ô." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="358.0" prefHeight="16.0" prefWidth="746.0" style="-fx-font-weight: bold;" text="Để tạm dừng trò chơi, bấm pause." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="366.0" prefHeight="51.0" prefWidth="746.0" style="-fx-font-weight: bold;" text="Điểm số trò chơi được tính là thời gian hoàn thành trò chơi (từ lúc bắt đầu trò chơi đến lúc chiến thắng)" textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="374.0" prefHeight="16.0" prefWidth="746.0" style="-fx-font-weight: bold;" text="Để nâng cao độ khó nên trò chơi này được thiết kế là không có hint. " textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <VBox prefHeight="679.0" prefWidth="217.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="65.0" prefWidth="216.0">
+                     <children>
+                        <Button fx:id="ruleBtn" mnemonicParsing="false" prefHeight="24.0" prefWidth="105.0" text="Luật chơi" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="67.0" prefWidth="216.0">
+                     <children>
+                        <Button fx:id="newGameBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="36.0" prefWidth="94.0" text="Bắt đầu" />
+                        <Button fx:id="pauseBtn" alignment="CENTER" focusTraversable="false" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handlePauseBtn" prefHeight="28.0" prefWidth="115.0" text="Tạm dừng" textAlignment="CENTER" visible="false" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" fillHeight="false" prefHeight="48.0" prefWidth="216.0">
+                     <children>
+                        <Label text="Thời gian:">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="timeLabel" maxHeight="1.7976931348623157E308" prefHeight="18.0" prefWidth="57.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="163.0" prefWidth="216.0" />
+                  <Label prefHeight="16.0" prefWidth="207.0" text="Top player">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="topPlayer" prefHeight="327.0" prefWidth="206.0">
+                    <columns>
+                      <TableColumn fx:id="sttCol" prefWidth="40.0" text="#" />
+                      <TableColumn fx:id="userCol" minWidth="0.0" prefWidth="100.0" text="User" />
+                        <TableColumn fx:id="timeCol" prefWidth="65.0" text="Time" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>      
+   </children>
+</AnchorPane>

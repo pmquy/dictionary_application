@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="365.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.controller.Game3Controller">
+   <children>
+      <HBox prefHeight="372.0" prefWidth="866.0">
+         <children>
+            <StackPane prefHeight="372.0" prefWidth="603.0">
+               <children>
+                  <VBox fx:id="gameContent" prefHeight="372.0" prefWidth="603.0">
+                     <VBox maxWidth="1.7976931348623157E308" prefWidth="580.0" VBox.vgrow="ALWAYS">
+                        <children>
+                           <HBox prefHeight="26.0" prefWidth="239.0">
+                              <children>
+                                 <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                       <Button fx:id="newGame" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" text="Bắt đầu" />
+                                       <Button fx:id="pauseBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" text="Dừng" visible="false" />
+                                    </children>
+                                 </HBox>
+                                 <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="383.0">
+                                    <children>
+                                       <Button fx:id="hintBtn" mnemonicParsing="false" text="Hint">
+                                          <graphic>
+                                             <ImageView fx:id="hintImg" fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" />
+                                          </graphic>
+                                       </Button>
+                                       <Button fx:id="ruleBtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="112.0" text="Luật chơi">
+                                          <HBox.margin>
+                                             <Insets left="10.0" />
+                                          </HBox.margin>
+                                       </Button>
+                                    </children>
+                                 </HBox>
+                              </children>
+                           </HBox>
+                           <ProgressBar fx:id="bar" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0">
+                              <VBox.margin>
+                                 <Insets bottom="10.0" top="10.0" />
+                              </VBox.margin>
+                           </ProgressBar>
+                           <HBox alignment="CENTER" focusTraversable="true" maxWidth="1.7976931348623157E308" prefHeight="126.0" prefWidth="579.0">
+                              <children>
+                                 <Label fx:id="meaning" alignment="CENTER" prefHeight="80.0" prefWidth="320.0" text="Meaning" />
+                              </children>
+                           </HBox>
+                           <HBox fx:id="guessWord" prefHeight="60.0" prefWidth="125.0" />
+                           <HBox fx:id="input" prefHeight="60.0" prefWidth="600.0" />
+                           <Button fx:id="nextBtn" mnemonicParsing="false" text="Bỏ qua" visible="false" />
+                        </children>
+                        <VBox.margin>
+                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </VBox.margin>
+                     </VBox>
+                  </VBox>
+                  <VBox fx:id="rule" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Luật chơi">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="16.0" prefWidth="538.0" style="-fx-font-weight: bold;" text="Trò chơi gồm 5 câu hỏi." textAlignment="JUSTIFY">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="235.0" layoutY="188.0" prefHeight="38.0" prefWidth="542.0" style="-fx-font-weight: bold;" text="Mỗi câu hỏi được cho sẵn nghĩa của từ và danh sách cách kí tự để tạo thành từ đó." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="43.0" layoutY="196.0" prefHeight="48.0" prefWidth="539.0" style="-fx-font-weight: bold;" text="Chọn chữ cái để ghép thành 1 từ. Các từ được chọn sẽ được đẩy lên trên, khi các từ được đẩy lên hết thì sẽ tự động kiểm tra đáp án, nếu đúng sẽ tự động tới câu tiếp theo, sai sẽ hiện ra Wrong ở rìa màn hình." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="188.0" prefHeight="48.0" prefWidth="541.0" style="-fx-font-weight: bold;" text="Sử dụng hint bằng cách bấm vào biểu tượng bóng đèn. Khi sử dụng hint, sẽ phát sáng nút nên bấm, nếu không phát sáng thì những chữ bạn chọn phía trước đã sai .Lưu ý chỉ được sử dụng tối đa 3 hint mỗi game." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="212.0" prefHeight="22.0" prefWidth="541.0" style="-fx-font-weight: bold;" text="Để tạm dừng trò chơi, bấm Dừng. " textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="249.0" prefHeight="14.0" prefWidth="541.0" style="-fx-font-weight: bold;" text="Bấm nút Tiếp tục để chơi tiếp." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="260.0" prefHeight="38.0" prefWidth="541.0" style="-fx-font-weight: bold;" text="Điểm số trò chơi được tính là thời gian hoàn thành trò chơi (từ lúc bắt đầu trò chơi đến lúc chiến thắng)" textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <VBox prefHeight="372.0" prefWidth="264.0">
+               <children>
+                  <VBox prefHeight="46.0" prefWidth="264.0">
+                     <children>
+                        <Label fx:id="inform" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="111.0" prefWidth="165.0" style="-fx-font-weight: bolder;" textFill="#d30c05" wrapText="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="264.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="89.0" style="-fx-font-weight: bolder;" text="Thời gian: " />
+                        <Label fx:id="timeLabel" prefHeight="25.0" prefWidth="67.0" style="-fx-font-weight: bolder;" visible="false" />
+                     </children>
+                  </HBox>
+                  <Label prefHeight="36.0" prefWidth="264.0" text="Top player">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="topPlayer" prefHeight="248.0" prefWidth="264.0">
+                    <columns>
+                      <TableColumn fx:id="sttCol" prefWidth="49.0" text="#" />
+                      <TableColumn fx:id="userCol" prefWidth="136.0" text="User" />
+                        <TableColumn fx:id="timeCol" prefWidth="78.0" text="Time" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>      
+   </children>
+</AnchorPane>

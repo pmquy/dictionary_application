@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.controller.TableController">
+   <children>
+      <HBox layoutX="10.0" layoutY="81.0" prefHeight="308.0" prefWidth="254.0">
+         <children>
+            <TableView fx:id="topPlayer" prefHeight="308.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="sttCol" prefWidth="54.0" text="#" />
+                <TableColumn fx:id="userCol" prefWidth="96.0" text="User" />
+                  <TableColumn fx:id="timeCol" prefWidth="84.0" text="Time" />
+              </columns>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

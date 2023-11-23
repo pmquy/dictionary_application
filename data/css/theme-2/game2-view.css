@@ -1,0 +1,24 @@
+@import "common.css";
+
+Button{
+    -fx-cursor : hand;
+    -fx-text-fill: -fx-white-2;
+    -fx-background-color: -fx-blue-2;
+    -fx-background-radius: 20px;
+}
+
+Button:hover{
+    -fx-text-fill: black;
+}
+
+ToggleButton{
+    -fx-cursor : hand;
+    -fx-text-fill: -fx-white-2;
+    -fx-background-color: -fx-blue-2;
+    -fx-background-radius: 20px;
+}
+
+ToggleButton:hover, ToggleButton:selected{
+    -fx-background-color : -fx-white-1;
+    -fx-text-fill : -fx-green-2;
+}

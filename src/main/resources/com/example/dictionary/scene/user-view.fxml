@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.controller.UserController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <VBox layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox fx:id="navBar" alignment="CENTER" prefHeight="54.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                     <children>
+                        <Label fx:id="homeNav" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="54.0" prefWidth="154.0" styleClass="btn-1" text="Trang chủ">
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="gameNav" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="54.0" prefWidth="162.0" styleClass="btn-1" text="Ôn tập">
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="translateNav" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="183.0" styleClass="btn-1" text="Dịch nghĩa">
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </Label>
+                        <ImageView fx:id="streakImg" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Circle fx:id="userNav" fill="#ffffff00" radius="27.0" stroke="BLACK" strokeType="INSIDE">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Circle>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox spacing="30.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="606.0" prefWidth="764.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="CENTER" spacing="10.0">
+                                       <children>
+                                          <Label fx:id="username" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="585.0" styleClass="bold" text="lk" wrapText="true" />
+                                          <HBox alignment="CENTER">
+                                             <children>
+                                                <ImageView fx:id="gemImg" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                <Label fx:id="gem" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="49.0" styleClass="bold" text="lk" wrapText="true" />
+                                                <ImageView fx:id="streakImg1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                   <HBox.margin>
+                                                      <Insets left="30.0" />
+                                                   </HBox.margin>
+                                                </ImageView>
+                                                <Label fx:id="streak1" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="49.0" styleClass="bold" text="lk" wrapText="true" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="123.0">
+                                             <children>
+                                                <ImageView fx:id="hintImg" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                <Label fx:id="hint" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="46.0" styleClass="bold" text="lk" wrapText="true" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Circle fx:id="userImg" fill="DODGERBLUE" radius="97.0" stroke="BLACK" strokeType="INSIDE">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Circle>
+                                          <Circle fx:id="chooseImg" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+                                             <StackPane.margin>
+                                                <Insets bottom="150.0" left="100.0" />
+                                             </StackPane.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Circle>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" styleClass="btn-11" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="157.0" styleClass="btn-11" text="Thành tích">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="290.0" prefWidth="585.0" style="-fx-background-radius: 10;" VBox.vgrow="ALWAYS">
+                                       <content>
+                                          <VBox fx:id="achievements" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="583.0" spacing="10.0" style="-fx-background-radius: 10;">
+                                             <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="626.0" prefWidth="530.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" maxWidth="400.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="btn-11">
+                                       <children>
+                                          <Label styleClass="btn-11" text="Shop">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="btn-22">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="56.0" prefWidth="348.0" spacing="5.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="20" />
+                                                      <ImageView fx:id="gemImg1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <ImageView fx:id="transferImg1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="1" />
+                                                      <ImageView fx:id="hintImg1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="70.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Button fx:id="transferBtn1" mnemonicParsing="false" styleClass="btn-2" text="Đổi " HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="56.0" prefWidth="348.0" spacing="5.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="100" />
+                                                      <ImageView fx:id="gemImg2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <ImageView fx:id="transferImg2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="10" />
+                                                      <ImageView fx:id="hintImg2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="70.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Button fx:id="transferBtn2" mnemonicParsing="false" styleClass="btn-2" text="Đổi " HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="56.0" prefWidth="348.0" spacing="5.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="200" />
+                                                      <ImageView fx:id="gemImg3" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <ImageView fx:id="transferImg3" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="30" />
+                                                      <ImageView fx:id="hintImg3" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="70.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Button fx:id="transferBtn3" mnemonicParsing="false" styleClass="btn-2" text="Đổi " HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="56.0" prefWidth="348.0" spacing="5.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="1000" />
+                                                      <ImageView fx:id="gemImg4" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <ImageView fx:id="transferImg4" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="200" />
+                                                      <ImageView fx:id="hintImg4" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="70.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Button fx:id="transferBtn4" mnemonicParsing="false" styleClass="btn-2" text="Đổi " HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" fillWidth="false">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="194.0" prefWidth="358.0" styleClass="btn-11">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="35.0" prefWidth="160.0" styleClass="btn-11" text="Đổi mật khẩu">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox alignment="CENTER" spacing="10.0" styleClass="btn-22">
+                                             <children>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="298.0" spacing="10.0">
+                                                   <children>
+                                                      <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Circle fx:id="pwImg1" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                            <Label maxHeight="1.7976931348623157E308" prefHeight="26.0" prefWidth="106.0" styleClass="bold" text="Mật khẩu hiện tại" />
+                                                         </children>
+                                                      </HBox>
+                                                      <TextField fx:id="pw1" prefWidth="140.0" styleClass="bold" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="298.0" spacing="10.0">
+                                                   <children>
+                                                      <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Circle fx:id="pwImg2" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                            <Label maxHeight="1.7976931348623157E308" prefHeight="26.0" prefWidth="106.0" styleClass="bold" text="Mật khẩu mới" />
+                                                         </children>
+                                                      </HBox>
+                                                      <PasswordField fx:id="pw2" prefWidth="140.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="298.0" spacing="10.0">
+                                                   <children>
+                                                      <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Circle fx:id="pwImg3" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                            <Label maxHeight="1.7976931348623157E308" prefHeight="26.0" prefWidth="144.0" styleClass="bold" text="Xác nhận mật khẩu" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                      </HBox>
+                                                      <PasswordField fx:id="pw3" prefWidth="140.0" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="changePasswordBtn" mnemonicParsing="false" styleClass="btn-2" text="Đổi mật khẩu" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <Button fx:id="removeUserBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="143.0" styleClass="btn-2" text="Xóa tài khoản">
+                                 <graphic>
+                                    <ImageView fx:id="binImg" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic></Button>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox alignment="TOP_RIGHT" fillHeight="false" layoutX="89.0" layoutY="-77.0" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" pickOnBounds="false" prefHeight="90.0" prefWidth="890.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="80.0" />
+               </HBox.margin>
+               <children>
+                  <HBox fx:id="dailyContainer" alignment="CENTER" prefHeight="90.0" prefWidth="507.0" spacing="10.0" style="-fx-background-color: #ff3333; -fx-border-radius: 10; -fx-border-color: #05386B; -fx-background-radius: 10; -fx-border-width: 2;" visible="false">
+                     <HBox.margin>
+                        <Insets left="350.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox fx:id="div2" alignment="CENTER" prefHeight="151.0" prefWidth="146.0">
+               <children>
+                  <Label fx:id="nav1" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="btn-2" text="Tài khoản">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fx:id="nav1Img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="nav2" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="btn-2" text="Cài đặt">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fx:id="nav2Img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="nav3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="btn-2" text="Đăng xuất">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fx:id="nav3Img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

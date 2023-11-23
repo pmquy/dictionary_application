@@ -1,0 +1,15 @@
+@import 'common.css'
+
+#welcomeText {
+    -fx-font-size : 70px;
+    -fx-font-weight : bold;
+    -fx-text-alignment : center;
+}
+
+#loginLabel, #signupLabel {
+    -fx-font-size : 15;
+}
+
+#loginLabel:hover, #signupLabel:hover {
+    -fx-text-fill : -fx-blue-2;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <HBox fx:id="temp" alignment="CENTER" layoutY="10.0" prefHeight="26.0" prefWidth="54.0" styleClass="btn-22">
+         <children>
+            <Label fx:id="t" prefHeight="18.0" prefWidth="22.0" text="X15" />
+            <ImageView fx:id="img" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+        <Pane fx:id="parent">
+            <Label fx:id="day" alignment="CENTER" layoutY="2.0" prefHeight="66.0" prefWidth="54.0" text="Ngày 1" />
+            <Label fx:id="coin" alignment="CENTER" layoutX="15.0" layoutY="-10.0" prefHeight="26.0" prefWidth="24.0" style="-fx-background-radius: 100000;" styleClass="bold" text="5" />
+        </Pane>
+    </children>
+</Pane>

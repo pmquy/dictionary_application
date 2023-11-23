@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionary.controller.LoginController">
+    <children>
+        <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="welcomeText" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="700.0" prefHeight="700.0" prefWidth="370.0" styleClass="btn-11" text="Dictionary Application" textOverrun="CLIP" wrapText="true" HBox.hgrow="ALWAYS" />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="700.0" prefWidth="418.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                            <children>
+                        <VBox prefHeight="44.0" prefWidth="214.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox prefHeight="35.0" prefWidth="214.0" spacing="30.0">
+                                 <children>
+                                    <Label fx:id="loginLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="35.0" prefWidth="112.0" style="-fx-text-fill:#05386B;" styleClass="bold" text="Đăng nhập" />
+                                    <Label fx:id="signupLabel" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" prefHeight="35.0" prefWidth="112.0" style="-fx-text-fill:black;" styleClass="bold" text="Đăng kí" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="bar" prefHeight="0.0" prefWidth="92.0" style="-fx-background-color: #05386B; -fx-background-radius : 20;">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <StackPane>
+                           <children>
+                              <VBox fx:id="loginView" alignment="CENTER" fillWidth="false" spacing="20.0">
+                                 <children>
+                                            <VBox alignment="TOP_RIGHT" prefHeight="62.0" prefWidth="301.0" spacing="10.0">
+                                                <children>
+                                                    <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="298.0" spacing="10.0">
+                                                        <children>
+                                                <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Circle fx:id="lUsernameImg" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                                  <Label maxHeight="1.7976931348623157E308" prefHeight="26.0" prefWidth="106.0" styleClass="bold" text="Tên đăng nhập" />
+                                                   </children>
+                                                </HBox>
+                                                            <TextField fx:id="lUsername" prefWidth="140.0" styleClass="bold" />
+                                                        </children>
+                                                    </HBox>
+                                                    <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                                                        <children>
+                                                <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Circle fx:id="lPasswordImg" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                                  <Label maxHeight="1.7976931348623157E308" prefHeight="26.0" prefWidth="76.0" styleClass="bold" text="Mật khẩu" />
+                                                   </children>
+                                                </HBox>
+                                                            <PasswordField fx:id="lPassword" prefHeight="26.0" prefWidth="140.0" />
+                                                        </children>
+                                                    </HBox>
+                                                </children>
+                                            </VBox>
+                                            <Button fx:id="lLoginBtn" mnemonicParsing="false" prefHeight="24.0" prefWidth="104.0" text="Đăng nhập" />
+                                 </children>
+                              </VBox>
+                               <VBox fx:id="signupView" alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="360.0" spacing="10.0" visible="false" HBox.hgrow="ALWAYS">
+                                   <children>
+                                       <VBox alignment="TOP_RIGHT" prefHeight="98.0" prefWidth="303.0" spacing="10.0">
+                                           <children>
+                                               <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="278.0" spacing="10.0">
+                                                   <children>
+                                                <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Circle fx:id="sUsernameImg" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                             <Label maxHeight="1.7976931348623157E308" styleClass="bold" text="Tên đăng nhập" />
+                                                   </children>
+                                                </HBox>
+                                                       <TextField fx:id="sUsername" prefWidth="140.0" styleClass="bold" />
+                                                   </children>
+                                               </HBox>
+                                               <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                                                   <children>
+                                                <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Circle fx:id="sPasswordImg" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                             <Label maxHeight="1.7976931348623157E308" styleClass="bold" text="Nhập mật khẩu" />
+                                                   </children>
+                                                </HBox>
+                                                       <PasswordField fx:id="sPassword" prefHeight="26.0" prefWidth="140.0" />
+                                                   </children>
+                                               </HBox>
+                                               <HBox prefHeight="26.0" prefWidth="260.0" spacing="10.0">
+                                                   <children>
+                                                <HBox spacing="10.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Circle fx:id="sPassword1Img" fill="#1f93ff00" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                                                             <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" prefHeight="26.0" prefWidth="108.0" styleClass="bold" text="Xác nhận mật khẩu" />
+                                                   </children>
+                                                </HBox>
+                                                       <PasswordField fx:id="sPassword1" maxWidth="162.0" prefHeight="26.0" prefWidth="140.0" />
+                                                   </children>
+                                               </HBox>
+                                           </children>
+                                       </VBox>
+                                       <Button fx:id="sCreateBtn" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" text="Tạo" />
+                                   </children>
+                               </VBox>
+                           </children>
+                        </StackPane>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

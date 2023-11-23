@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="achievement" maxHeight="100.0" maxWidth="1.7976931348623157E308" minHeight="100.0" spacing="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="img" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox>
+               <children>
+                  <Label fx:id="name" text="Label" />
+                  <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="detail" text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ProgressBar fx:id="bar" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0" />
+            <Label fx:id="description" text="Label" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

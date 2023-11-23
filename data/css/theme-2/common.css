@@ -1,0 +1,184 @@
+.root {
+    -fx-white-1 : #FFFBF5;
+    -fx-white-2: #EDF5E1;
+    -fx-blue-2 : #333399;
+    -fx-green-2 : #3366cc;
+    -fx-green-1 : #009999;
+    -fx-blue-1 : #6666ff;
+}
+
+#div2 {
+    -fx-background-color : -fx-white-1;
+    -fx-background-radius : 10;
+    -fx-border-radius : 10;
+    -fx-border-color : -fx-blue-2;
+    -fx-border-width : 2;
+}
+
+
+WebView,Button, ScrollPane, TextField, PasswordField, .btn-1, .btn-2, .btn-11, .btn-22{
+    -fx-border-radius : 10;
+    -fx-background-radius : 10;
+}
+
+.text-sz0 {
+    -fx-font-size : 15;
+}
+
+.text-sz1 {
+    -fx-font-size : 20;
+}
+
+.text-sz2 {
+    -fx-font-size : 30;
+}
+
+.text-bold {
+    -fx-font-weight : bold;
+}
+
+.bold, .btn-11, .btn-22 {
+    -fx-font-weight : bold;
+}
+
+ChoiceBox {
+    -fx-background-color : -fx-blue-2;
+}
+ChoiceBox > .label {
+    -fx-text-fill : -fx-white-2
+}
+ChoiceBox .context-menu {
+    -fx-background-color : -fx-white-1;
+}
+ChoiceBox .menu-item {
+    -fx-background-color : -fx-white-2;
+}
+ChoiceBox .menu-item > .label {
+    -fx-text-fill : -fx-blue-2;
+}
+ChoiceBox .menu-item:focused {
+    -fx-background-color : -fx-blue-2;
+}
+ChoiceBox .menu-item:focused > .label {
+    -fx-text-fill : -fx-white-2;
+}
+
+AnchorPane {
+    -fx-background-color : -fx-green-2;
+}
+
+TextField, PasswordField {
+    -fx-background-color : -fx-white-1;
+    -fx-border-color : -fx-blue-2;
+}
+
+ListView .list-cell:odd {
+    -fx-background-color : -fx-white-2;
+}
+
+ListView .list-cell:even {
+    -fx-background-color : -fx-green-1;
+}
+
+ListView .list-cell:hover {
+    -fx-background-color : -fx-blue-1;
+    -fx-text-fill : -fx-white-2;
+}
+
+Button, .navBar > Label, .btn-1, .btn-2, #userNav{
+    -fx-cursor : hand;
+    -fx-font-weight : bold;
+}
+
+
+
+ListView .list-cell:selected, Button, .btn-2:hover, .btn-1, .btn-11 {
+    -fx-text-fill : -fx-white-2;
+    -fx-background-color : -fx-blue-2;
+}
+
+Button:hover, .btn-1:hover, .btn-2, .btn-22{
+    -fx-background-color : -fx-white-1;
+    -fx-text-fill : -fx-blue-2;
+}
+
+ProgressBar > .bar, .scroll-bar .thumb {
+    -fx-background-color : -fx-blue-2;
+}
+
+ProgressBar > .track, .scroll-bar .track {
+    -fx-background-color : -fx-white-2;
+}
+
+#navBar {
+    -fx-background-color : -fx-blue-2;
+    -fx-font-weight : bold;
+}
+
+.container {
+    background-color: -fx-blue-2;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: solid -fx-blue-2;
+    border-radius:10px;
+    width: 90%;
+    height: 90%;
+}
+
+body {
+    background-color: -fx-green-2;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently\n" +
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.bg-white {
+    -fx-background-color : -fx-white-1;
+    -fx-text-fill : -fx-blue-2;
+}
+
+.bg-blue {
+    -fx-background-color : -fx-blue-2;
+    -fx-text-fill : -fx-white-1;
+}
+
+TableView {
+    -fx-background-color: -fx-blue-2;
+}
+
+TableView .column-header {
+    -fx-background-color: -fx-blue-2;
+    -fx-text-fill: -fx-white-2;
+}
+
+TableView .table-cell:even{
+    -fx-background-color : -fx-green-1;
+}
+
+TableView .table-cell:odd{
+    -fx-background-color : -fx-white-2;
+}
+
+TableView .table-cell:hover {
+    -fx-background-color : -fx-blue-1;
+    -fx-text-fill : -fx-white-2;
+}
+
+#game1Nav, #game2Nav, #game3Nav{
+    -fx-background-color: #00c6ff;
+    -fx-text-fill: #000024;
+}
+
+#game1Nav:hover, #game2Nav:hover, #game3Nav:hover{
+    -fx-background-color: #00fefe;
+    -fx-text-fill: #000024;
+}

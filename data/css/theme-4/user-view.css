@@ -1,0 +1,11 @@
+@import 'common.css';
+
+#username {
+    -fx-font-weight : bold;
+    -fx-font-size : 30;
+}
+
+#achievements #name{
+    -fx-font-weight : bold;
+    -fx-font-size : 20;
+}

@@ -1,0 +1,6 @@
+@import 'common.css'
+
+#leftBtn, #rightBtn, #streakText {
+    -fx-font-size : 20px;
+}
+
